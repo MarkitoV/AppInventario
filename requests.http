@@ -1,0 +1,13 @@
+### Signup a new User
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+  "testing": "hello world"
+}
+
+### Signin a User
+POST http://localhost:3000/api/auth/signin
+
+### Send a profile of a User
+GET http://localhost:3000/api/auth/profile
