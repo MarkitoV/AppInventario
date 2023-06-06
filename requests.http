@@ -3,7 +3,8 @@ POST http://localhost:3000/api/auth/signup
 Content-Type: application/json
 
 {
-  "testing": "hello world"
+  "userName": "fazt",
+  "password": "password"
 }
 
 ### Signin a User

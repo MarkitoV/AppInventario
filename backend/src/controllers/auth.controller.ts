@@ -1,7 +1,16 @@
 import { Request, Response } from 'express';
+import User, { IUser } from '../models/User';
+import jwt from 'jsonwebtoken';
 
-export const signup = (req: Request, res: Response) => {
-  console.log(req.body);
+export const signup = async (req: Request, res: Response) => {
+  // saving a new user
+  const user: IUser = new User({
+    userName: req.body.userName,
+    password: req.body.password
+  });
+  const savedUser = await user.save();
+  // token
+  
   res.send('signup');
 };
 
