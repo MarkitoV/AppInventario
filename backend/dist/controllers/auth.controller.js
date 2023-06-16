@@ -48,8 +48,9 @@ const signin = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.signin = signin;
 // METHOD FOR SEE A USER PROFILE
-const profile = (req, res) => {
+const profile = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const user = yield User_1.default.findById(req.userId);
     res.send('profile');
-};
+});
 exports.profile = profile;
 //# sourceMappingURL=auth.controller.js.map

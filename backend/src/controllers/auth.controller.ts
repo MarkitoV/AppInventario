@@ -35,6 +35,7 @@ export const signin = async (req: Request, res: Response) => {
 };
 
 // METHOD FOR SEE A USER PROFILE
-export const profile = (req: Request, res: Response) => {
+export const profile = async (req: Request, res: Response) => {
+  const user = await User.findById(req.userId);
   res.send('profile');
 };

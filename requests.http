@@ -18,3 +18,4 @@ Content-Type: application/json
 
 ### Send a profile of a User
 GET http://localhost:3000/api/auth/profile
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgwYTAyZjM3ZDliZDhjZGEzOTBlNDEiLCJpYXQiOjE2ODY5MjcwNjMsImV4cCI6MTY4NjkzNzg2M30.AwlKQMaCDvEA1dWkTLPDwTsVzFSg5VvzMOK8jJ6I6Vs
